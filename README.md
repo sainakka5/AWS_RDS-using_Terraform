@@ -8,10 +8,10 @@ STEPS TO CREATE AWS RDS :
 2.	Login into Putty terminal with public -IP and keypair of that instance 
 3.	After login to centos root user, install Terraform and its supporting packages with linux script
    
-        # sudo yum update -y #
-        # sudo yum install -y yum-utils #
-        # sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo #
-        # sudo yum -y install terraform #
+         sudo yum update -y 
+         sudo yum install -y yum-utils 
+         sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo 
+         sudo yum -y install terraform 
 
 	After execution above commands, we installed Terraform and its supporting packages, from the above link we downloaded HASHICORP LANGUAGE packages
 
