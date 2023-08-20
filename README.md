@@ -10,8 +10,8 @@ STEPS TO CREATE AWS RDS :
 
 
 # sudo yum update -y #
-#sudo yum install -y yum-utils #
-#sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo#
+# sudo yum install -y yum-utils #
+# sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo #
 # sudo yum -y install terraform #
 
 	After execution above commands, we installed Terraform and its supporting packages, from the above link we downloaded HASHICORP LANGUAGE packages
