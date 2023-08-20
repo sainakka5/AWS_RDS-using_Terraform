@@ -16,6 +16,9 @@ sudo yum -y install terraform
 4.	 After installation create a directory with command mkdir<directory_name> and go to that directory with command cd < directory_name >.
 5.	Create a file name variable.tf and provide the variables for your RDS instance in a variables.tf file using HCL script mentioned below. Some variables that are included are the database engine, instance size, storage size, username and password, and backup retention period. Create that file with the command vi variable.tf. it automatically created and entered into that file by entering “I” (insert) the variables script mentioned in the below picture. I had entered my configurations in that script as variables. For access_key and secret_key we have to create a IAM user with suitable permission and generate access_key and secret_key for that IAM user , paste this keys in the variable file script and save it.
    
+   ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/62c1e220-a283-4daa-b5db-7d0f88d6feb5)
+
+   
     #create a file variable.tf and save the following script in the file #
 
 variable "access_key" {
@@ -67,6 +70,9 @@ variable "backup_retention_period" {
 
 7.	Again create another with command “ vi main.tf ” and define the Terraform resources for your RDS instance. Use the aws_db_instance resource type to create the RDS instance, and set the resource properties according to your chosen configuration, I had defined my configuration for my database as below script. Save the script in the file.
 
+   ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/5515e98c-4ae1-47a0-ba3c-2eb781c9abcb)
+
+
  #save the following script in main.tf file which have the all information of aws rds creation #
 
 provider "aws" {
@@ -111,15 +117,29 @@ output "rds_endpoint" {
        terraform apply   #   creates the infrastructure (RDS in this project)
 
 Overall commands that are given in this instance are shown in the above figure.
+
+ ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/c08f48d4-a6eb-4ada-b6e9-1784fe173e03)
+
                              
 8.	After creation of AWS RDS we will get endpoint which is like host name to connect the database to  MYSQL workbench , go to the RDS >database>click on the created database  there we get Endpoint address , copy that endpoint.
+
+   ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/cff3037d-be9f-4d92-b075-757f744209db)
+
            
-9.	Install and open the MYSQL workbench click on    symbol of mysql connections then add all credentials to connect with our database
+10.	Install and open the MYSQL workbench click on    symbol of mysql connections then add all credentials to connect with our database
+
+    ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/c4725e5d-b292-49fb-9db0-4839339ad86c)
+
                                     
 	Enter the details: Connection name: can be any; Hostname: endpoint of rds , username: one which we gave in “main.tf”file and after clicking on store in vault we can enter password the same which we gave in “main.tf”. Click on test connection and click on connection.
- 
+
+ ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/300bb610-bdd5-4c3a-b06e-a4d36b4c6a60)
+
 
 	You will enter into the mysql workbench sever with RDS connection as below, we can excecute sql commands in that workspace.
+
+![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/0ff40e7e-8982-462b-87c5-462fbe558a63)
+
 
  
 10.	 By this we had verified that RDS instance is working correctly by connecting to it using a SQL client, such as MySQL Workbench or pgAdmin.
