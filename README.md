@@ -1,6 +1,8 @@
-![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/684cf93f-5915-420a-a52f-847732e578c8)# AWS_RDS-using_Terraform
-AWS DEVOPS PROJECTS
+       AWS DEVOPS PROJECTS
 PROJECT 1: Provisioning AWS RDS with Terraform
+
+![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/684cf93f-5915-420a-a52f-847732e578c8)# AWS_RDS-using_Terraform
+
 STEPS TO CREATE AWS RDS :
 1.	Create an EC2 instance in AWS console, I create an instance with name TERRAFORM_PROJ
 2.	Login into Putty terminal with public -IP and keypair of that instance 
