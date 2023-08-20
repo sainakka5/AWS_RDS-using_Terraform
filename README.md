@@ -1,4 +1,4 @@
-       AWS DEVOPS PROJECTS
+
 PROJECT 1: Provisioning AWS RDS with Terraform
 
 ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/684cf93f-5915-420a-a52f-847732e578c8)# AWS_RDS-using_Terraform
