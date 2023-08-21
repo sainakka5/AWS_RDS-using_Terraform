@@ -72,7 +72,7 @@ variable "backup_retention_period" {
 
 7.	Again create another with command “ vi main.tf ” and define the Terraform resources for your RDS instance. Use the aws_db_instance resource type to create the RDS instance, and set the resource properties according to your chosen configuration, I had defined my configuration for my database as below script. Save the script in the file.
 
-   ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/5515e98c-4ae1-47a0-ba3c-2eb781c9abcb)
+![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/b2bf0d79-0619-4070-bab1-deeb4cb4e526)
 
 
  #save the following script in main.tf file which have the all information of aws rds creation #
