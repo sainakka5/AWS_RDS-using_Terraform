@@ -70,7 +70,7 @@ variable "backup_retention_period" {
   default     = 7
 }
 
-7.	Again create another with command “ vi main.tf ” and define the Terraform resources for your RDS instance. Use the aws_db_instance resource type to create the RDS instance, and set the resource properties according to your chosen configuration, I had defined my configuration for my database as below script. Save the script in the file.
+6.	Again create another with command “ vi main.tf ” and define the Terraform resources for your RDS instance. Use the aws_db_instance resource type to create the RDS instance, and set the resource properties according to your chosen configuration, I had defined my configuration for my database as below script. Save the script in the file.
 
 ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/b2bf0d79-0619-4070-bab1-deeb4cb4e526)
 
@@ -113,7 +113,7 @@ output "rds_endpoint" {
 
 	I had mentioned 3306 port in the security group of that instance which is default port of MYSQL engine
 
-8.	To execute the scrips in the files, we have to run the following commands 
+7.	To execute the scrips in the files, we have to run the following commands 
       terraform init       # It downloads required plugins for that infrastructure 
       terraform plan     #  Print output, what it’s going to create
        terraform apply   #   creates the infrastructure (RDS in this project)
@@ -128,7 +128,7 @@ Overall commands that are given in this instance are shown in the above figure.
    ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/cff3037d-be9f-4d92-b075-757f744209db)
 
            
-10.	Install and open the MYSQL workbench click on    symbol of mysql connections then add all credentials to connect with our database
+9.	Install and open the MYSQL workbench click on    symbol of mysql connections then add all credentials to connect with our database
 
     ![image](https://github.com/sainakka5/AWS_RDS-using_Terraform/assets/136338958/c4725e5d-b292-49fb-9db0-4839339ad86c)
 
